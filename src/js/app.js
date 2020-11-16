@@ -4,12 +4,13 @@ import "./utils/Capture";
 // import WebGLAnimation from "../../lib/gl.js";
 import WebGLAnimation from "./WebGLAnimation";
 import Settings from "./Settings";
+import Config from "./Config";
 import addControls from "./debug/addControls";
 
 let webglAnim;
 
 function _init() {
-  webglAnim = new WebGLAnimation("assets/", {});
+  webglAnim = new WebGLAnimation("assets/", { test: 5 });
   Settings.init();
 
   webglAnim.on("onProgress", onProgress);

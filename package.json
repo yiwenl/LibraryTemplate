@@ -63,6 +63,7 @@
     "glsl-utils": "github:yiwenl/glsl-utils",
     "gsap": "^2.0.2",
     "hex-rgb": "^3.0.0",
+    "object-assign": "^4.1.1",
     "parse-svg-path": "^0.1.2",
     "querystringparser": "^0.1.1",
     "randomutils": "github:yiwenl/randomUtils",

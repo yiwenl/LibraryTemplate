@@ -16,7 +16,6 @@ class WebGLAnimation extends Emitter {
     for (const s in mConfig) {
       if (Config[s]) {
         Config[s] = mConfig[s];
-        console.log("overwrite", s);
       }
     }
 
@@ -30,6 +29,12 @@ class WebGLAnimation extends Emitter {
       oAsset.url = oAsset.url.replace("assets/", assetsPath);
       return oAsset;
     });
+
+    if (assetsAry.length === 0) {
+      setTimeout(() => {
+        this._onAssetsLoaded();
+      }, 1000 / 60);
+    }
 
     const loader = new AssetsLoader({
       assets: assetsAry,
