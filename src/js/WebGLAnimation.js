@@ -6,18 +6,14 @@ import Assets from "./Assets";
 import Config from "./Config";
 import AssetsLoader from "assets-loader";
 import Emitter from "events";
+import objectAssign from "object-assign";
 
 class WebGLAnimation extends Emitter {
   constructor(mAssetsUrl = "assets/", mConfig = {}) {
     super();
 
     this._isPlaying = true;
-
-    for (const s in mConfig) {
-      if (Config[s]) {
-        Config[s] = mConfig[s];
-      }
-    }
+    objectAssign(Config, mConfig);
 
     this.canvas = document.createElement("canvas");
     GL.init(this.canvas, { preserveDrawingBuffer: !!window.isDevelopment });

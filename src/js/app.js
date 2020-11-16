@@ -4,7 +4,6 @@ import "./utils/Capture";
 // import WebGLAnimation from "../../lib/gl.js";
 import WebGLAnimation from "./WebGLAnimation";
 import Settings from "./Settings";
-import Config from "./Config";
 import addControls from "./debug/addControls";
 
 let webglAnim;
