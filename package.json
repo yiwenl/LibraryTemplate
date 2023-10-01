@@ -10,6 +10,7 @@
   "scripts": {
     "build": "webpack --config ./config/webpack.config.prod.js && npm run lib",
     "lib": "rollup -c",
+    "dev": "cd ./lib && python3 -m http.server 8000",
     "start": "webpack serve --config ./config/webpack.config.dev.js & npm run shader & npm run assets",
     "assets": "node ./tasks/watch-asset.js",
     "shader": " node ./tasks/shader-watcher.js"
