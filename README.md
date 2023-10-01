@@ -24,10 +24,12 @@ $ npm run build
 
 This builds the webpage for uploading, files are located in the `dist/` folder.
 
-# Build library
+## Build library
 
 ```sh
 $ npm run lib
 ```
 
 This builds the library for importing, file are located in the `lib/` folder.
+
+## Configuration

@@ -29,6 +29,7 @@ const initAnim = () => {
 // init settings
 if (isDev || keepDebug) {
   console.log("development mode");
+
   import("./Settings").then(({ default: Settings }) => {
     Settings.init();
     initAnim();
