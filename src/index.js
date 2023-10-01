@@ -1,5 +1,5 @@
-import WebGLAnimation from "../build/webgl-anim.es.js";
-// import WebGLAnimation, { LOADED } from "./WebGLAnimation";
+// import WebGLAnimation from "../lib/webgl-anim.es.js";
+import WebGLAnimation from "./WebGLAnimation";
 import Settings from "./Settings";
 import "./debug";
 import addControl from "./utils/addControl";
